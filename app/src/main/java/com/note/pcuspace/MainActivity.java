@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         cardView5.setBackgroundResource(R.drawable.cardcolor3);
 
         //ad mobe
-        MobileAds.initialize(this, "ca-app-pub-7633958771517626~9774885927");
+        MobileAds.initialize(this, "ADMOB ID CA_APP");
         Location location = new Location("AdMobProvider");
         location.setLatitude(13.543296);
         location.setLatitude(100.924562);
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         adBuilder.setLocation(location);
 
         interstitialAd = new InterstitialAd(this);
-        interstitialAd.setAdUnitId("ca-app-pub-7633958771517626/4023209251");
+        interstitialAd.setAdUnitId("ADMOB ID CA-APP");
         AdRequest.Builder builder = new AdRequest.Builder();
         builder.setLocation(location);
 
